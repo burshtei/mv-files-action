@@ -1,0 +1,13 @@
+name: 'Move files'
+description: Moving files
+inputs:
+  src:
+    description: source directory
+    required: true
+  dest:
+    description: destination directory
+    required: true
+
+runs:
+  using: 'node12'
+  main: 'index.js'
