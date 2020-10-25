@@ -11,7 +11,7 @@ const fs = __webpack_require__(747);
 const src = core.getInput('src', {required: true})
 const dest = core.getInput('dest', {required: true})
 
-if (existsSync(src)) {
+if (fs.existsSync(src)) {
 
     fs.rename(src, dest, function (err) {
         if (err) throw err
